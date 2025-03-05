@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="css/contactpage/contactDesktop.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <p>Địa chỉ: 006 - Cao Bá Quát - Phường Cốc Lếu - Thành phố Lào Cai</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" onclick="toggleSearchInput()" placeholder="Tìm kiếm...">
+            <button>&#128269;</button>
+        </div>
+    </div>
+    <div class="clinic-info" id="clinicInfo">
+        <div class="logo">&#9875;</div>
+        <div class="text">
+            <h2>Phòng khám tư nhân Trí Đức</h2>
+            <p>Hotline: 0986792115</p>
+        </div>
+    </div>
+    <nav class="menu-bar" id="menuBar">
+        <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="introduction.html">Giới thiệu</a></li>
+            <li><a href="services.html">Dịch vụ điều trị</a></li>
+            <li><a href="notification.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="icon-menu-search" id="menuSearch">
+        <div>
+            <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu-icon-items" id="menuIconItem">
+                <a href="home.html">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Dịch vụ điều trị</a>
+                <a href="#">Thông báo</a>
+                <a href="#">Liên hệ</a>
+            </div>
+        </div>
+        
+        <div class="search-phone" id="searchPhone">
+            <div class="search-icon" onclick="toggleSearch()" id="searchIcon">
+                &#128269;
+            </div>
+            <input type="text" placeholder="Tìm kiếm" id="searchIconInput">
+        </div>
+    </div>
+    <img class="contactPic" src="images/health.png" alt="">
+</body>
+
+</html>

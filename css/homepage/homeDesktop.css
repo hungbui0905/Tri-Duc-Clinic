@@ -115,6 +115,7 @@ nav ul li a {
 }
 
 .icon-menu-search {
+    position: relative;
     display: none;
 }
 
@@ -156,7 +157,6 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 5%;
-
 }
 
 .services img {

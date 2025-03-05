@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.top-bar {
+    height: 40px;
+    background: #05413c;
+    color: white;
+     padding-inline: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+
+    background-color: white;
+    border-radius: 30px;
+}
+
+.search-box input {
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+}
+
+.search-box button {
+    background: none;
+
+    border: none;
+    cursor: pointer;
+}
+
+#searchInput:focus {
+    border: none;
+    outline: none;
+}
+
+
+.logo {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #009FE3;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.clinic-info {
+    padding-inline: 10%;
+   display: flex;
+   align-items: center;
+}
+
+
+
+
+.menu-icon,
+.search-icon {
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: black;
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    padding: 6px;
+
+}
+
+.menu-icon div {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(137, 24, 24);
+    transition: 0.3s;
+
+}
+
+.menu-icon ul li {
+    display: none;
+}
+
+.icon-menu-search {
+    position: relative;
+    display: none;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-icon-items {
+    display: none;
+    
+}
+
+
+
+.menu-icon.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.contactPic {
+    width: 100%;
+    height: 30%;
+}

@@ -14,7 +14,7 @@ p {
     height: 40px;
     background: #05413c;
     color: white;
-    padding-inline: 13%;
+     padding-inline: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,27 +82,13 @@ nav ul li a {
     width: 100%;
     
 }
-
-.search-phone {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-}
-
 .search-phone input {
     display: none;
 }
 
-.search-icon.active~input {
-    position: absolute;
-    top: 100%;
-    display: block;
-}
 
 .menu-icon,
 .search-icon {
-    margin: 10px;
     border: 2px solid;
     border-radius: 10px;
     border-color: black;
@@ -142,33 +128,10 @@ nav ul li a {
 
 .menu-icon-items {
     display: none;
-    position: absolute;
-    margin-top: 10px;
-    left: 10px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    width: 150px;
-}
-
-.menu-icon-items a {
-
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.menu-icon-items a:hover {
-    background-color: #d20707;
+    
 }
 
 
-.menu-icon.active+.menu-icon-items {
-    display: block;
-}
 
 .menu-icon.active div:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -183,7 +146,7 @@ nav ul li a {
 }
 
 .clinic-info {
-    padding-inline: 13%;
+     padding-inline: 10%;
     display: flex;
     align-items: center;
 }
@@ -224,7 +187,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: start;
-    padding-inline: 13%;
+     padding-inline: 10%;
 }
 
 .introduction img {
@@ -239,14 +202,18 @@ nav ul li a {
 }
 .notification {
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-inline: 13%;
-    margin-bottom: 5px;
+     padding-inline: 10%;
+    margin-bottom: 20px;
 }
 .notification-info {
+    height: 60%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đẩy button xuống cuối */
+    
 }
+
 
 .notification-list {
     display: flex;
@@ -254,18 +221,19 @@ nav ul li a {
     gap: 5%;
     
 }
-.notification-info div {
-    display: flex;
-    align-items: flex-end;
-    height: 40%;
-}
-.notification-info div img {
-    height: 100%;
+
+
+.notification-info a img {
+    box-sizing: content-box;
+    height: 25vh;
     width: 100%;
 }
-.notification-info h2 {
-    font-weight: lighter;
-    height: 15%;
+.notification-info a {
+    text-decoration: none;
+    color: black;
+}
+.notification-info a h2:hover {
+    color: orange;
 }
 .booking_bar {
     display: flex;
@@ -301,29 +269,25 @@ nav ul li a {
 }
 
 footer {
-    margin-bottom: 15px;
+    
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-inline: 13%;
-    gap: 15%
+     padding-inline: 10%;
+    gap: 5%
 }
 .clinic-info-footer .text{
     display: flex;
     align-items: center;
 }
-
+.clinic-info-footer {
+    align-items: end;
+}
 .working-hour {
-    
     font-size: large;
     padding: 15px;
     border-radius: 15px;
     background-color: blue;
     color: white;
-}
-.notification-info button {
-    border-style: solid;
-    border-color: rgb(239, 191, 101);
-    border-radius: 5px;
     margin-bottom: 10px;
 }
+

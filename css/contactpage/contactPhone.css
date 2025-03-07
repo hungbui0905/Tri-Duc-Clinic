@@ -1,78 +1,32 @@
-@media screen and (max-width: 987px) {
-    .top-bar {
-        display: none !important;
-    }
-
-    .clinic-info {
-        display: flex;
-        align-items: center;
-        padding-left: 5px;
-        background: white;
-        text-align: left;
-    }
-
-    .clinic-info>.text {
-        font-size: 14px;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-
-    .icon-menu-search {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .menu-icon.active+.menu-icon-items {
+@media screen and (max-width: 1024px) {
+    #mapContact {
+        width: 100%;
         display: block;
-        position: absolute;
-        background-color: white;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nameAndPhone {
+        flex-direction: column;
     }
 
-    .menu-icon-items a {
-
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: black;
+    .nameAndPhone div {
+        width: 100%;
     }
 
-    .menu-icon-items a:hover {
-        background-color: #d20707;
+    .nameAndPhone div:nth-child(2) {
+        transform: none;
+    }
+    
+    .nameAndPhone div:nth-child(2) input, 
+    .nameAndPhone div:nth-child(2) h3 {
+        transform: none;
+    }
+    .contactInfo {
+        width: 100%;
     }
 
-    .icon-menu-search .menu-icon {
-        display: flex !important
-    }
-
-    .icon-menu-search .search-icon {
-        display: flex !important
-    }
-
-    .search-phone {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
-
-    .search-icon.active+input {
-        top: 110%;
-        right: 0%;
-        display: block;
-        position: absolute;
-        background-color: white;
-        border: 1px solid #ccc;
-        padding: 10px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
+    textarea {
+        width: 80%;
     }
 }

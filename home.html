@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Phòng khám tư nhân Trí Đức</title>
+    <link rel="stylesheet" href="css/allpage/desktop.css">
+    <link rel="stylesheet" href="css/allpage/phone.css">
     <link rel="stylesheet" href="css/homepage/homeDesktop.css">
     <link rel="stylesheet" href="css/homepage/homePhone.css">
 
@@ -12,59 +14,58 @@
 </head>
 
 <body>
-    <div class="top-bar">
-        <p>Địa chỉ: 006 - Cao Bá Quát - Phường Cốc Lếu - Thành phố Lào Cai</p>
-        <div class="search-box">
-            <input type="text" id="searchInput" onclick="toggleSearchInput()" placeholder="Tìm kiếm...">
-            <button>&#128269;</button>
-        </div>
-    </div>
-    <div class="clinic-info" id="clinicInfo">
-        <div class="logo">&#9875;</div>
-        <div class="text">
-            <h2>Phòng khám tư nhân Trí Đức</h2>
-            <p>Hotline: 0986792115</p>
-        </div>
-    </div>
-    <nav class="menu-bar" id="menuBar">
-        <ul>
-            <li><a href="home.html">Trang chủ</a></li>
-            <li><a href="introduction.html">Giới thiệu</a></li>
-            <li><a href="services.html">Dịch vụ điều trị</a></li>
-            <li><a href="notification.html">Thông báo</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-    </nav>
-    <div class="icon-menu-search" id="menuSearch">
-        <div>
-            <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="menu-icon-items" id="menuIconItem">
-                <a href="home.html">Trang chủ</a>
-                <a href="#">Giới thiệu</a>
-                <a href="#">Dịch vụ điều trị</a>
-                <a href="#">Thông báo</a>
-                <a href="#">Liên hệ</a>
+    <header>
+        <div class="top-bar">
+            <p>Địa chỉ: 006 - Cao Bá Quát - Phường Cốc Lếu - Thành phố Lào Cai</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" onclick="toggleSearchInput()" placeholder="Tìm kiếm...">
+                <button>&#128269;</button>
             </div>
         </div>
-        
-        <div class="search-phone" id="searchPhone">
-            <div class="search-icon" onclick="toggleSearch()" id="searchIcon">
-                &#128269;
+        <div class="clinic-info" id="clinicInfo">
+            <div class="logo">&#9875;</div>
+            <div class="text">
+                <h2>Phòng khám tư nhân Trí Đức</h2>
+                <p>Hotline: 0986792115</p>
             </div>
-            <input type="text" placeholder="Tìm kiếm" id="searchIconInput">
         </div>
-    </div>
+        <nav class="menu-bar" id="menuBar">
+            <ul>
+                <li><a href="home.html">Trang chủ</a></li>
+                <li><a href="introduction.html">Giới thiệu</a></li>
+                <li><a href="services.html">Dịch vụ điều trị</a></li>
+                <li><a href="notification.html">Thông báo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="icon-menu-search" id="menuSearch">
+            <div>
+                <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu-icon-items" id="menuIconItem">
+                    <a href="home.html">Trang chủ</a>
+                    <a href="introduction.html">Giới thiệu</a>
+                    <a href="services.html">Dịch vụ điều trị</a>
+                    <a href="notification.html">Thông báo</a>
+                    <a href="contact.html">Liên hệ</a>
+                </div>
+            </div>
 
-    
+            <div class="search-phone" id="searchPhone">
+                <div class="search-icon" onclick="toggleSearch()" id="searchIcon">
+                    &#128269;
+                </div>
+                <input type="text" placeholder="Tìm kiếm" id="searchIconInput">
+            </div>
+        </div>
+    </header>
 
-    </div>
 
-    <div class="pic-content" id="picContent">
+    <div class="pic-content" id="mainPicture">
         <img src="images/homepage/homepic.jpg" alt="Bác sĩ">
     </div>
 
@@ -152,6 +153,11 @@
                 <h2>Phòng khám tư nhân Trí Đức</h2>
             </div>
             <p>Địa chỉ: 006 - Cao Bá Quát - Thành phố Lào Cai - Tỉnh Lào Cai</p>
+            <p>Giờ làm việc:
+                Sáng: 8 h-11h tất cả các ngày trong tuần
+                Chiều 15h-18h tất cả các ngày trong tuần
+
+            </p>
             <p>Hotline: 0986792115</p>
             <iframe id="fanpage"
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063565957525&tabs&width=340&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
@@ -159,31 +165,13 @@
                 allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
-        <div class="working-hour">
-            <h3>Giờ làm việc</h3>
-            <hr>
-            <p>Sáng: 8 h-11h tất cả các ngày trong tuần</p>
-            <hr>
-            <p>Chiều 15h-18h tất cả các ngày trong tuần</p>
-        </div>
+
 
 
         <iframe id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.1842948790986!2d103.96648137436854!3d22.49726757954548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cd139ba94fc969%3A0x27481a2ec9c94b36!2zUGjDsm5nIGtow6FtIFRSw40gxJDhu6hD!5e0!3m2!1svi!2s!4v1741109004774!5m2!1svi!2s"
-            width="300" height="300" style="border:0; margin-bottom: 10px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
-    <div class="booking_bar">
-        <a href="">
-            <div><b>Đặt lịch khám</b></div>
-        </a>
-        <a href="">
-            <div><b>Liên hệ</b></div>
-        </a>
-    </div>
-
-
-
 
     <script src="javascripts/home.js"></script>
 

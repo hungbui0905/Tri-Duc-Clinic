@@ -1,157 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.top-bar {
-    height: 40px;
-    background: #05413c;
-    color: white;
-     padding-inline: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.search-box {
-
-    background-color: white;
-    border-radius: 30px;
-}
-
-.search-box input {
-    border-radius: 30px;
-    border: none;
-    padding: 5px;
-}
-
-.search-box button {
-    background: none;
-
-    border: none;
-    cursor: pointer;
-}
-
-#searchInput:focus {
-    border: none;
-    outline: none;
-}
-
-
-.logo {
-    font-size: 40px;
-    margin-right: 15px;
-}
-
-nav ul {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background: #009FE3;
-    text-align: center;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    padding: 50px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-
-.pic-content {
-    display: flex;
-    align-items: center;
-}
-
-.pic-content img {
-    width: 100%;
-    
-}
-.search-phone input {
-    display: none;
-}
-
-
-.menu-icon,
-.search-icon {
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: black;
-    display: none;
-    flex-direction: column;
-    gap: 3px;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    padding: 6px;
-
-}
-
-.menu-icon div {
-    width: 100%;
-    height: 5px;
-    background-color: rgb(137, 24, 24);
-    transition: 0.3s;
-
-}
-
-.menu-icon ul li {
-    display: none;
-}
-
-.icon-menu-search {
-    position: relative;
-    display: none;
-}
-
-.menu-icon div {
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-.menu-icon-items {
-    display: none;
-    
-}
-
-
-
-.menu-icon.active div:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-icon.active div:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-icon.active div:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-.clinic-info {
-     padding-inline: 10%;
-    display: flex;
-    align-items: center;
-}
-
 .services {
     margin-top: 10px;
     display: flex;
@@ -187,7 +33,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: start;
-     padding-inline: 10%;
+    padding-inline: 10%;
 }
 
 .introduction img {
@@ -200,18 +46,20 @@ nav ul li a {
     color: rgb(161, 79, 92);
     line-height: 30px;
 }
+
 .notification {
     margin-top: 10px;
-     padding-inline: 10%;
-    margin-bottom: 20px;
+    padding-inline: 10%;
 }
+
 .notification-info {
     height: 60%;
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Đẩy button xuống cuối */
-    
+    justify-content: space-between;
+    /* Đẩy button xuống cuối */
+
 }
 
 
@@ -219,7 +67,7 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     gap: 5%;
-    
+
 }
 
 
@@ -228,67 +76,12 @@ nav ul li a {
     height: 25vh;
     width: 100%;
 }
+
 .notification-info a {
     text-decoration: none;
     color: black;
 }
+
 .notification-info a h2:hover {
     color: orange;
 }
-.booking_bar {
-    display: flex;
-    height: 60px;
-    background: #05413c;
-    position: sticky;
-    bottom: 0px;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    font-size: 1.17rem;
-    color: white;
-}
-
-.booking_bar a {
-    text-decoration: none;
-}
-.booking_bar a div {
-    color: white;
-    display: flex;
-    width: 170px;
-    justify-content: center;
-}
-.booking_bar a div:hover {
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 170px;
-    background-color: white;
-    color: black;
-}
-
-footer {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-inline: 10%;
-    gap: 10%
-}
-.clinic-info-footer .text{
-    display: flex;
-    align-items: center;
-}
-.clinic-info-footer {
-    align-items: end;
-}
-.working-hour {
-    font-size: large;
-    padding: 15px;
-    border-radius: 15px;
-    background-color: blue;
-    color: white;
-    margin-bottom: 10px;
-}
-

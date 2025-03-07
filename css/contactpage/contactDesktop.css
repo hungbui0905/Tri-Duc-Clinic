@@ -36,6 +36,7 @@
 
 
 .nameAndPhone div input {
+    height: 30px;
     width: 80%;
 }
 
@@ -43,4 +44,16 @@ textarea {
     height: 300px;
     width: 99%;
 }
+
+.contactInfo button {
+    margin-top: 10px;
+    transform-origin: top left;
+    transform: scale(1.0);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+
 

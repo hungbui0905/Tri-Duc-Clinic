@@ -5,11 +5,15 @@ function h3alignment() {
     let inputWidth = phoneInput.offsetWidth;
     let paddingNum = (npWidth - (inputWidth * 2)) / 2;
     let h3Element = document.getElementById("h3Element");
-    h3Element.style.paddingRight = paddingNum + "px";
+    if(window.innerWidth > 500) {
+        h3Element.style.paddingLeft = paddingNum + "px";
+    } else {
+        h3Element.style.paddingLeft = "0px";
+    }
 }
 
-h3alignment();
 
+h3alignment();
 
 window.addEventListener("DOMContentLoaded", h3alignment);
 window.addEventListener("resize", h3alignment);

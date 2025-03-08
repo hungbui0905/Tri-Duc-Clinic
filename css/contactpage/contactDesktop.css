@@ -7,13 +7,19 @@
     height: 30%;
 }
 
+.contactInfo img {
+    height: 65%;
+    width: 40%;
+}
 .contactInfo h2 {
     font-weight: lighter;
 }
 
 .contactInfo {
     padding-inline: 10%;
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nameAndPhone div {

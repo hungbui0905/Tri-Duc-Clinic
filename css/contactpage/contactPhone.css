@@ -10,6 +10,14 @@
         flex-direction: column;
     }
 
+    .contactInfo img {
+        display: none;
+    }
+
+    .contactInfo form {
+        width: 100%;
+    }
+
     .nameAndPhone div {
         width: 100%;
     }

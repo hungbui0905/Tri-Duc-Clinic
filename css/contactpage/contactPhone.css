@@ -10,13 +10,7 @@
         flex-direction: column;
     }
 
-    .contactInfo img {
-        display: none;
-    }
-
-    .contactInfo form {
-        width: 100%;
-    }
+    
 
     .nameAndPhone div {
         width: 100%;
@@ -36,5 +30,15 @@
 
     textarea {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contactInfo img {
+        display: none;
+    }
+
+    .contactInfo form {
+        width: 100%;
     }
 }

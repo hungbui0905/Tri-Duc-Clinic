@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 Array.from( document.querySelector(".otp-cells").children).forEach(cell => {
     cell.addEventListener("input", function() {
-        this.value = this.value.replace(/[^0-9]/g, "");
         if(this.value.length === this.maxLength) {
             let nextCell = this.nextElementSibling;
             if (nextCell) nextCell.focus(); 

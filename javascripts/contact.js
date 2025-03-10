@@ -27,6 +27,7 @@ Array.from( document.querySelector(".otp-cells").children).forEach(cell => {
         if(this.value.length === this.maxLength) {
             let nextCell = this.nextElementSibling;
             if (nextCell) nextCell.focus(); 
+            this.disabled = true;
         }
     })
 });

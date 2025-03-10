@@ -11,16 +11,20 @@ function h3alignment() {
         h3Element.style.paddingLeft = "0px";
     }
 }
-document.getElementById("sendBtn").addEventListener("click", function () {
-    document.querySelector(".otp").style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("sendBtn").addEventListener("click", function () {
+        document.querySelector(".otp").style.display = "block";
+    });
+
+    document.getElementById("exit").addEventListener("click", function () {
+        document.querySelector(".otp").style.display = "none";
+    });
 });
 
-document.getElementById("exit").addEventListener("click", function () {
-    document.querySelector(".otp").style.display = "none";
-});
 
 Array.from( document.querySelector(".otp-cells").children).forEach(cell => {
     cell.addEventListener("input", function() {
+        this.value = this.value.replace(/[^0-9]/g, "");
         if(this.value.length === this.maxLength) {
             let nextCell = this.nextElementSibling;
             if (nextCell) nextCell.focus(); 
